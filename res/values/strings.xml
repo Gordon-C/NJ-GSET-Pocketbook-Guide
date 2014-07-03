@@ -8,5 +8,6 @@
     <string name="menu_item1">Science and Engineering Research Center</string>
     <string name="menu_item2">BEST West Residence Hall</string>
     <string name="menu_item3">Busch Dining Hall</string>
+    <string name="title_activity_descriptions">DescriptionsActivity</string>
 
 </resources>
