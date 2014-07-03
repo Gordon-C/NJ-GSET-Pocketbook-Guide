@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.os.Build;
 
 public class DescriptionsActivity extends Activity {
@@ -49,6 +50,9 @@ public class DescriptionsActivity extends Activity {
 	 */
 	public static class PlaceholderFragment extends Fragment {
 
+		private TextView title;
+		private TextView desc;
+		
 		public PlaceholderFragment() {
 		}
 
@@ -57,6 +61,11 @@ public class DescriptionsActivity extends Activity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_descriptions,
 					container, false);
+			title = (TextView) rootView.findViewById(R.id.tvTitle);
+			desc = (TextView) rootView.findViewById(R.id.tvTitle);
+			
+			title.setText("TITLE");
+			desc.setText("DESCRIPTION");
 			return rootView;
 		}
 	}
