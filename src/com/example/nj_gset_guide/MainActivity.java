@@ -9,15 +9,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.os.Build;
 
 public class MainActivity extends Activity {
-
+	private ListView lv;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        lv = (ListView) findViewById(R.id.lv_places);
+        
         setContentView(R.layout.activity_main);
-
+        
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
