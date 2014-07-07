@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
         
         lv = (ListView) findViewById(R.id.lv_places);
         
+        
         setContentView(R.layout.activity_main);
         
         if (savedInstanceState == null) {
