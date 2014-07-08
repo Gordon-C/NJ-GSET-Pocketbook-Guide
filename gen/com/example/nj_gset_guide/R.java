@@ -27,11 +27,13 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
+        public static final int action_settings=0x7f080007;
         public static final int container=0x7f080000;
+        public static final int iv_building_img=0x7f080005;
         public static final int lv_places=0x7f080004;
         public static final int tvDescription=0x7f080002;
         public static final int tvTitle=0x7f080001;
+        public static final int tv_building_name=0x7f080006;
         public static final int tvwelcome=0x7f080003;
     }
     public static final class layout {
@@ -39,6 +41,7 @@ public final class R {
         public static final int activity_main=0x7f030001;
         public static final int fragment_descriptions=0x7f030002;
         public static final int fragment_main=0x7f030003;
+        public static final int rowlayout=0x7f030004;
     }
     public static final class menu {
         public static final int descriptions=0x7f070000;

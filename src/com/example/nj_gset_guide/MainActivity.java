@@ -3,13 +3,17 @@ package com.example.nj_gset_guide;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.os.Build;
 
 public class MainActivity extends Activity {
@@ -20,7 +24,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         
         lv = (ListView) findViewById(R.id.lv_places);
-        
+        //lv.setAdapter(new ListAdapter(...));//TODO add adapter
         
         setContentView(R.layout.activity_main);
         
@@ -66,6 +70,25 @@ public class MainActivity extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }
+    }
+    
+    public static class ListAdapter extends ArrayAdapter<String>	{
+    	
+    	String [] values;
+    	TextView buildingName;
+    	ImageView buildingImg;
+    	
+    	public ListAdapter(Context context, String[] values) {
+    		super(context, R.layout.rowlayout, values);
+    	    this.values = values;
+    	}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			buildingName.setText(values[position]);
+			//TODO set building image
+			return super.getView(position, convertView, parent);
+		}
     }
 
 }
