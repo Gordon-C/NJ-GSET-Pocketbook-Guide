@@ -53,7 +53,13 @@ public final class R {
         public static final int menu_item1=0x7f050005;
         public static final int menu_item2=0x7f050006;
         public static final int menu_item3=0x7f050007;
-        public static final int title_activity_descriptions=0x7f050008;
+        public static final int menu_item4=0x7f050008;
+        public static final int menu_item5=0x7f050009;
+        public static final int menu_item6=0x7f05000a;
+        public static final int menu_item7=0x7f05000b;
+        public static final int menu_item8=0x7f05000c;
+        public static final int menu_item9=0x7f05000d;
+        public static final int title_activity_descriptions=0x7f05000e;
     }
     public static final class style {
         /** 
