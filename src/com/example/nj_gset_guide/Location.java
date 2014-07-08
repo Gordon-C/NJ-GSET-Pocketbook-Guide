@@ -4,20 +4,24 @@ import java.lang.reflect.Field;
 import android.app.Activity;
 
 public class Location {
-	private String id;
+	private String name;
 	private Activity act; 
 	
-	public Location(String id, Activity act) {
-		this.id = id;
+	public Location(String name, Activity act) {
+		this.name = name;
 		this.act = act;
 	}
 	
 	public String getName() {
-		return act.getResources().getString(Location.getId(id, R.string.class));
+		return name;
 	}
 	
 	public String getDescription() {
-		return act.getResources().getString(Location.getId(id, R.string.class));
+		return act.getResources().getString(Location.getId(name + "_desc", R.string.class));
+	}
+	
+	public String getAddress() {
+		return act.getResources().getString(Location.getId(name + "_addr", R.string.class));
 	}
 	
 	private static int getId(String resourceName, Class<?> c) {
