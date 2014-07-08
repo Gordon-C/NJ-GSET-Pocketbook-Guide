@@ -6,15 +6,16 @@
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
     <string name="explore_msg">Explore Rutgers..</string>
-    <string name="menu_item1">Science and Engineering Research Center</string>
-    <string name="menu_item2">BEST West Residence Hall</string>
-    <string name="menu_item3">Busch Dining Hall</string>
-    <string name="menu_item4">Biomedical Engineering Building</string>
-    <string name="menu_item5">Busch Campus Center</string>
-    <string name="menu_item6">Center for Advanced Infrastructure and Transportation</string>
-    <string name="menu_item7">Computing Research and Education Building</string>
-    <string name="menu_item8">Engineering Building</string>
-    <string name="menu_item9">Fiber Optic Materials Research Building</string>
-    <string name="title_activity_descriptions">DescriptionsActivity</string>
+    <string-array name="locations_array">
+        <item>BEST West Residence Hall</item>
+        <item>Science and Engineering Research Center</item>
+        <item>Busch Dining Hall</item>
+        <item>Busch Campus Center</item>
+        <item>Biomedical Engineering Building</item>
+        <item>Center for Advanced Infrastructure and Transporation</item>
+        <item>Computing Research and Education Building</item>
+        <item>Engineering Building</item>
+        <item>Fiber Optic Materials Research Building</item>
+    </string-array>
 
 </resources>
