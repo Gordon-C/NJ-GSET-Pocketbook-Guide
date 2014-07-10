@@ -5,6 +5,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,15 +18,12 @@ import android.widget.TextView;
 import android.os.Build;
 
 public class MainActivity extends Activity {
-	private ListView lv;
+	private static ListView lv;
+	private static String[] buildings;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
-        lv = (ListView) findViewById(R.id.lv_places);
-        //lv.setAdapter(new ListAdapter(...));//TODO add adapter
-        
         setContentView(R.layout.activity_main);
         
         if (savedInstanceState == null) {
@@ -33,6 +31,7 @@ public class MainActivity extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+        
     }
 
 
@@ -70,6 +69,15 @@ public class MainActivity extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }
+
+		@Override
+		public void onViewCreated(View view, Bundle savedInstanceState) {
+			super.onViewCreated(view, savedInstanceState);
+            Log.d("DEBUG", "onviewcreated");
+			buildings = getResources().getStringArray(R.array.locations_array);
+            lv = (ListView) getView().findViewById(R.id.lv_places);
+            lv.setAdapter(new ListAdapter(getActivity(), buildings));
+		}
     }
     
     public static class ListAdapter extends ArrayAdapter<String>	{
@@ -85,7 +93,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			buildingName.setText(values[position]);
+			buildingName.setText(values[position]);//TODO nullpointerexception on values
 			//TODO set building image
 			return super.getView(position, convertView, parent);
 		}
