@@ -27,7 +27,7 @@ public class Location {
 	}
 	
 	//later implement getting image
-	public String getImagePath() {
+	public String getImageName() {
 		return name + "_img";
 	}
 	
