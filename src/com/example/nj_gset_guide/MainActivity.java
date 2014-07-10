@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,6 +23,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        Resources res = getResources();
+        String[] location_names = res.getStringArray(R.array.locations_array); 
         
         lv = (ListView) findViewById(R.id.lv_places);
         //lv.setAdapter(new ListAdapter(...));//TODO add adapter

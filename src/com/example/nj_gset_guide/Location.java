@@ -15,7 +15,7 @@ public class Location {
 	}
 	
 	public String getName() {
-		return name;
+		return name.replace("_", " ");
 	}
 	
 	public String getDescription() {
