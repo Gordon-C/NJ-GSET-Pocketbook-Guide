@@ -8,15 +8,23 @@
     <string name="explore_msg">Explore Rutgers..</string>
     <string name="title_activity_descriptions">Descriptionsesz</string>
     <string-array name="locations_array">
-        <item>BEST West Residence Hall</item>
-        <item>Science and Engineering Research Center</item>
-        <item>Busch Dining Hall</item>
-        <item>Busch Campus Center</item>
-        <item>Biomedical Engineering Building</item>
-        <item>Center for Advanced Infrastructure and Transporation</item>
-        <item>Computing Research and Education Building</item>
-        <item>Engineering Building</item>
-        <item>Fiber Optic Materials Research Building</item>
+        <item>BEST_West_Residence_Hall</item>
+        <item>Science_and_Engineering_Research_Center</item>
+        <item>Busch_Dining_Hall</item>
+        <item>Busch_Campus_Center</item>
+        <item>Biomedical_Engineering_Building</item>
+        <item>Center_for_Advanced_Infrastructure_and_Transporation</item>
+        <item>Computing_Research_and_Education_Building</item>
+        <item>Engineering_Building</item>
+        <item>Fiber_Optic_Materials_Research_Building</item>
     </string-array>
-
+    <string name="BEST_West_Residence_Hall_desc"></string>
+	<string name="Science_and_Engineering_Research_Center_desc"></string>
+	<string name="Busch_Dining_Hall_desc"></string>
+	<string name="Busch_Campus_Center_desc"></string>
+	<string name="Biomedical_Engineering_Building_desc"></string>
+	<string name="Center_for_Advanced_Infrastructure_and_Transportation_desc"></string>
+	<string name="Computing_Research_and_Education_Building_desc"></string>
+	<string name="Engineering_Building_desc"></string>
+	<string name="Fiber_Optic_Materials_Research_Building_desc"></string>
 </resources>

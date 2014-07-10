@@ -1,7 +1,9 @@
 package com.example.nj_gset_guide;
 
 import java.lang.reflect.Field;
+
 import android.app.Activity;
+import android.widget.ImageView;
 
 public class Location {
 	private String name;
@@ -13,7 +15,7 @@ public class Location {
 	}
 	
 	public String getName() {
-		return name;
+		return name.replace("_", " ");
 	}
 	
 	public String getDescription() {
@@ -22,6 +24,11 @@ public class Location {
 	
 	public String getAddress() {
 		return act.getResources().getString(Location.getId(name + "_addr", R.string.class));
+	}
+	
+	//later implement getting image
+	public String getImageName() {
+		return name + "_img";
 	}
 	
 	private static int getId(String resourceName, Class<?> c) {

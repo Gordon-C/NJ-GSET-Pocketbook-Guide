@@ -51,6 +51,15 @@ public final class R {
         public static final int main=0x7f080001;
     }
     public static final class string {
+        public static final int BEST_West_Residence_Hall_desc=0x7f050006;
+        public static final int Biomedical_Engineering_Building_desc=0x7f05000a;
+        public static final int Busch_Campus_Center_desc=0x7f050009;
+        public static final int Busch_Dining_Hall_desc=0x7f050008;
+        public static final int Center_for_Advanced_Infrastructure_and_Transportation_desc=0x7f05000b;
+        public static final int Computing_Research_and_Education_Building_desc=0x7f05000c;
+        public static final int Engineering_Building_desc=0x7f05000d;
+        public static final int Fiber_Optic_Materials_Research_Building_desc=0x7f05000e;
+        public static final int Science_and_Engineering_Research_Center_desc=0x7f050007;
         public static final int action_search=0x7f050003;
         public static final int action_settings=0x7f050002;
         public static final int app_name=0x7f050000;
