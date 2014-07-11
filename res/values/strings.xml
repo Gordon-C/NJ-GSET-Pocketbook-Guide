@@ -6,7 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
     <string name="explore_msg">Explore Rutgers..</string>
-    <string name="title_activity_descriptions">Descriptionsesz</string>
+    <string name="title_activity_descriptions">Descriptions</string>
     <string-array name="locations_array">
         <item>BEST_West_Residence_Hall</item>
         <item>Science_and_Engineering_Research_Center</item>
