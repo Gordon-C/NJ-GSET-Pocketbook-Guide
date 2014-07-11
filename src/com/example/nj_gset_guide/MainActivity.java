@@ -21,6 +21,7 @@ import android.os.Build;
 public class MainActivity extends Activity {
 	private static ListView lv;
 	private static String[] buildings;
+	private static Location[] locations;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,11 @@ public class MainActivity extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-        
+
+		buildings = getResources().getStringArray(R.array.locations_array);
+        locations = new Location[buildings.length];
+	    for(int i = 0; i < buildings.length; i++)
+	    	locations[i] = new Location(buildings[i], this);
     }
 
 
@@ -74,29 +79,34 @@ public class MainActivity extends Activity {
 		@Override
 		public void onViewCreated(View view, Bundle savedInstanceState) {
 			super.onViewCreated(view, savedInstanceState);
-            Log.d("DEBUG", "onviewcreated");
-			buildings = getResources().getStringArray(R.array.locations_array);
             lv = (ListView) getView().findViewById(R.id.lv_places);
+            Log.d("DEBUG", "listview created");
             lv.setAdapter(new ListAdapter(getActivity(), buildings));
 		}
     }
     
     public static class ListAdapter extends ArrayAdapter<String>	{
     	
-    	String [] values;
-    	TextView buildingName;
-    	ImageView buildingImg;
+    	private final String [] values;
+    	private final Context context;
     	
     	public ListAdapter(Context context, String[] values) {
     		super(context, R.layout.rowlayout, values);
     	    this.values = values;
+    	    this.context = context;
     	}
 
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
-			buildingName.setText(values[position]);//TODO nullpointerexception on values
+			LayoutInflater inflater = (LayoutInflater) context
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			View rowView = inflater.inflate(R.layout.rowlayout, parent, false);
+    		TextView buildingName = (TextView) rowView.findViewById(R.id.tv_building_name);
+    		buildingName.setTextSize(24);
+    		//ImageView buildingImg = (ImageView) rowView.findViewById(R.id.iv_building_img);
+			buildingName.setText(locations[position].getName());
 			//TODO set building image
-			return super.getView(position, convertView, parent);
+			return rowView;
 		}
     }
 
