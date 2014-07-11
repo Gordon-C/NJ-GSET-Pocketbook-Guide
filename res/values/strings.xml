@@ -18,7 +18,7 @@
         <item>Engineering_Building</item>
         <item>Fiber_Optic_Materials_Research_Building</item>
     </string-array>
-    <string name="BEST_West_Residence_Hall_desc"></string>
+    <string name="BEST_West_Residence_Hall_desc">Description</string>
 	<string name="Science_and_Engineering_Research_Center_desc"></string>
 	<string name="Busch_Dining_Hall_desc"></string>
 	<string name="Busch_Campus_Center_desc"></string>
@@ -27,4 +27,14 @@
 	<string name="Computing_Research_and_Education_Building_desc"></string>
 	<string name="Engineering_Building_desc"></string>
 	<string name="Fiber_Optic_Materials_Research_Building_desc"></string>
+	
+	<string name="BEST_West_Residence_Hall_addr">Address</string>
+	<string name="Science_and_Engineering_Research_Center_addr"></string>
+	<string name="Busch_Dining_Hall_addr"></string>
+	<string name="Busch_Campus_Center_addr"></string>
+	<string name="Biomedical_Engineering_Building_addr"></string>
+	<string name="Center_for_Advanced_Infrastructure_and_Transportation_addr"></string>
+	<string name="Computing_Research_and_Education_Building_addr"></string>
+	<string name="Engineering_Building_addr"></string>
+	<string name="Fiber_Optic_Materials_Research_Building_addr"></string>
 </resources>
