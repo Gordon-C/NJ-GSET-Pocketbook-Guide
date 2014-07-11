@@ -18,6 +18,7 @@
         <item>Engineering_Building</item>
         <item>Fiber_Optic_Materials_Research_Building</item>
     </string-array>
+    
     <string name="BEST_West_Residence_Hall_desc">Description</string>
 	<string name="Science_and_Engineering_Research_Center_desc"></string>
 	<string name="Busch_Dining_Hall_desc"></string>
@@ -28,13 +29,40 @@
 	<string name="Engineering_Building_desc"></string>
 	<string name="Fiber_Optic_Materials_Research_Building_desc"></string>
 	
-	<string name="BEST_West_Residence_Hall_addr">Address</string>
-	<string name="Science_and_Engineering_Research_Center_addr"></string>
-	<string name="Busch_Dining_Hall_addr"></string>
-	<string name="Busch_Campus_Center_addr"></string>
-	<string name="Biomedical_Engineering_Building_addr"></string>
-	<string name="Center_for_Advanced_Infrastructure_and_Transportation_addr"></string>
-	<string name="Computing_Research_and_Education_Building_addr"></string>
-	<string name="Engineering_Building_addr"></string>
-	<string name="Fiber_Optic_Materials_Research_Building_addr"></string>
+	<string name="BEST_West_Residence_Hall_addr">
+	    54 Bevier Road
+		Piscataway, NJ 08854
+	</string>
+	<string name="Science_and_Engineering_Research_Center_addr">
+	    118 Frelinghuysen Road
+		Piscataway, NJ 08854-8019
+	</string>
+	<string name="Busch_Dining_Hall_addr">
+	    608 Bartholomew Road
+		Piscataway, NJ 08854-8002
+	</string>
+	<string name="Busch_Campus_Center_addr">
+	    604 Bartholomew Road
+		Piscataway, NJ 08854-8002
+	</string>
+	<string name="Biomedical_Engineering_Building_addr">
+	    599 Taylor Road
+		Piscataway, NJ 08854-5610
+	</string>
+	<string name="Center_for_Advanced_Infrastructure_and_Transportation_addr">
+	    100 Brett Road
+		Piscataway, NJ 08854-8058
+	</string>
+	<string name="Computing_Research_and_Education_Building_addr">
+	    96 Frelinghuysen Road
+		Piscataway, NJ 08854-8018
+	</string>
+	<string name="School_of_Engineering_Building_addr">
+	    98 Brett Road
+		Piscataway, NJ 08854-8058
+	</string>
+	<string name="Fiber_Optic_Materials_Research_Building_addr">
+	    101 Bevier Road
+		Piscataway, NJ 08854-8007
+	</string>
 </resources>
