@@ -65,7 +65,8 @@ public final class R {
         public static final int Computing_Research_and_Education_Building_desc=0x7f05000c;
         public static final int Engineering_Building_desc=0x7f05000d;
         public static final int Fiber_Optic_Materials_Research_Building_addr=0x7f050017;
-        public static final int Fiber_Optic_Materials_Research_Building_desc=0x7f05000e;
+        public static final int Protips_addr=0x7f050018;
+        public static final int Protips_desc=0x7f05000e;
         public static final int School_of_Engineering_Building_addr=0x7f050016;
         public static final int Science_and_Engineering_Research_Center_addr=0x7f050010;
         public static final int Science_and_Engineering_Research_Center_desc=0x7f050007;

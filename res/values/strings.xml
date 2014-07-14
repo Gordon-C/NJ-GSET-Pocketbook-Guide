@@ -17,17 +17,58 @@
         <item>Computing_Research_and_Education_Building</item>
         <item>Engineering_Building</item>
         <item>Fiber_Optic_Materials_Research_Building</item>
+        <item>Protips</item>
     </string-array>
     
-    <string name="BEST_West_Residence_Hall_desc">Description</string>
-	<string name="Science_and_Engineering_Research_Center_desc"></string>
-	<string name="Busch_Dining_Hall_desc"></string>
-	<string name="Busch_Campus_Center_desc"></string>
+    <string name="BEST_West_Residence_Hall_desc">
+        The Busch Engineering, Science, and Technology West Residence Hall, commonly referred to as just "BEST", will become your 
+        home away from home for the next four weeks. The rooms are obscenely luxurious and spacious for college dorms as the 
+        building was constructed recently in 2011. Each room houses two scholars and is connected by a bathroom to an adjacent 
+        room. This room-bathroom-room structure is called a suite. Make sure to get along well with your roommate and suitemates
+        because you will work on various projects, such as robotics, together as a two or four person group. Of course you should 
+        make friends with everyone at GSET, not just your suitemates!   
+    </string>
+	<string name="Science_and_Engineering_Research_Center_desc">
+	    Abbreviated as SERC (pron. S-ER-K), this building will be where the GSET orientation is held for both parents and
+	    scholars. During the orientation, you will meet the hardworking individuals behind GSET, including but not limited to
+	    Dean Rosen, Dean Antoine, and your gorgeous RTAs. When not serving as an orientation center, SERC is the location of 
+	    math and computer science courses. Make sure not to talk in the halls as summer courses are ongoing. 
+	    Perhaps most importantly, this building is a haven for all those that love to live in subzero temperatures. The air 
+	    conditioning here is turned on to max 24/7. This will be your biggest blessing after walking in the Piscatway heat all
+	    the way from BEST (approx. 10000 miles) to attend classes.    
+	</string>
+	<string name="Busch_Dining_Hall_desc">
+	    The Busch Dining Hall will be where you eat for the majority of your meals (except catered meals, which are held at BEST).
+	    Make sure to have your meal card ready when you get to the doors. 
+	    
+	    For breakfast, there are scrambled eggs with a choice of protein (often sausage or bacon), and a side of potatoes 
+	    (often in the form of hash browns or tater tots). You can accompany your breakfast with a lovely side of fresh fruits
+	    from the fruit bar, or if you are feeling particularly peckish, indulge in an unlimited supply of donuts.
+	    
+	    For lunch,   
+	</string>
+	<string name="Busch_Campus_Center_desc">
+	    There are no classes held in the campus center; however savvy RTAs will lead their groups through this air conditioned 
+	    building in order to avoid the heat. 
+	</string>
 	<string name="Biomedical_Engineering_Building_desc"></string>
-	<string name="Center_for_Advanced_Infrastructure_and_Transportation_desc"></string>
-	<string name="Computing_Research_and_Education_Building_desc"></string>
-	<string name="Engineering_Building_desc"></string>
-	<string name="Fiber_Optic_Materials_Research_Building_desc"></string>
+	<string name="Center_for_Advanced_Infrastructure_and_Transportation_desc">
+	    Abbreviated as CAIT (pron. K-AY-T), this building is the center for civil engineering. Occasionally, keynote speakers
+	    will present here. If you do take an architecture course, it will most likely take place in CAIT. 
+	</string>
+	<string name="Computing_Research_and_Education_Building_desc">
+	    Shortened to CoRE (pron. K-OR), the Computing Research and Education Building is the main building for computer 
+	    science. Currently, no classes are held in this building, but computer programming research project groups often meet
+	    their mentors here.
+	</string>
+	<string name="Engineering_Building_desc">
+	    Several classes and projects take place in the Engineering Building. The bountiful laboratories and tools available
+	    in this building make it a catch-all for various research projects and classes. If you are in a pharmacy, chemistry, or
+	    materials engineering class, expect to spend at least 6 hours here each week. 
+	</string>
+	<string name="Protips_desc">
+        of your meal card, BEST key card, and room key 
+	</string>
 	
 	<string name="BEST_West_Residence_Hall_addr">
 	    54 Bevier Road
@@ -64,5 +105,9 @@
 	<string name="Fiber_Optic_Materials_Research_Building_addr">
 	    101 Bevier Road
 		Piscataway, NJ 08854-8007
+	</string>
+	<string name="Protips_addr">
+	    101 School of Hard Knocks
+	    Life, The World 
 	</string>
 </resources>
