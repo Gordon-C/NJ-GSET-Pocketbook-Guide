@@ -112,4 +112,5 @@
 	    101 School of Hard Knocks
 	    Life, The World 
 	</string>
+    <string name="title_activity_map">MapActivity</string>
 </resources>
