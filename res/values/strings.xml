@@ -40,18 +40,20 @@
 	<string name="Busch_Dining_Hall_desc">
 	    The Busch Dining Hall will be where you eat for the majority of your meals (except catered meals, which are held at BEST).
 	    Make sure to have your meal card ready when you get to the doors. 
-	    
 	    For breakfast, there are scrambled eggs with a choice of protein (often sausage or bacon), and a side of potatoes 
 	    (often in the form of hash browns or tater tots). You can accompany your breakfast with a lovely side of fresh fruits
 	    from the fruit bar, or if you are feeling particularly peckish, indulge in an unlimited supply of donuts.
-	    
-	    For lunch,   
+	    For lunch, there is a choice of protein, fries, and salad bar for your consumption.
+	    Similarly, for dinner, there is a choice of protein, fries, and salad bar. 
 	</string>
 	<string name="Busch_Campus_Center_desc">
 	    There are no classes held in the campus center; however savvy RTAs will lead their groups through this air conditioned 
 	    building in order to avoid the heat. 
 	</string>
-	<string name="Biomedical_Engineering_Building_desc"></string>
+	<string name="Biomedical_Engineering_Building_desc">
+		The Biomedical Engineering Building, as the name implies, is the hub for biomedical research. Courses related to 
+		bio-engineering can be found here.   
+	</string>
 	<string name="Center_for_Advanced_Infrastructure_and_Transportation_desc">
 	    Abbreviated as CAIT (pron. K-AY-T), this building is the center for civil engineering. Occasionally, keynote speakers
 	    will present here. If you do take an architecture course, it will most likely take place in CAIT. 
