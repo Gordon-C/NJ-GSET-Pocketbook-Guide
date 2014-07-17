@@ -55,6 +55,9 @@ public class DescriptionsActivity extends Activity {
 
 		private TextView title;
 		private TextView desc;
+		private TextView addr;
+		private Button mapBtn;
+		
 		
 		public PlaceholderFragment() {
 		}
@@ -66,9 +69,15 @@ public class DescriptionsActivity extends Activity {
 					container, false);
 			title = (TextView) rootView.findViewById(R.id.tvTitle);
 			desc = (TextView) rootView.findViewById(R.id.tvDescription);
+			addr = (TextView) rootView.findViewById(R.id.tvAddress);
+			mapBtn = (Button) rootView.findViewById(R.id.tvMapButton);
+			
 			
 			title.setText(location.getName());
 			desc.setText(location.getDescription());
+			addr.setText(location.getAddress());
+			mapBtn.setText("Google Maps");
+			
 			return rootView;
 		}
 	}
