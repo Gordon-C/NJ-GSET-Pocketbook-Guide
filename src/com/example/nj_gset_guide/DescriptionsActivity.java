@@ -20,7 +20,7 @@ public class DescriptionsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_descriptions);
 		
-		location = new Location(getIntent().getStringExtra(MainActivity.KEY), this);
+		location = new Location(getIntent().getStringExtra(MainActivity.KEY).replace(" ", "_"), this);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
