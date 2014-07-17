@@ -1,11 +1,15 @@
 package com.example.nj_gset_guide;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 
 import android.app.Activity;
-import android.widget.ImageView;
 
-public class Location {
+public class Location implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 9044695727414990631L;
 	private String name;
 	private Activity act; 
 	

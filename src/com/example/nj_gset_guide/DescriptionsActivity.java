@@ -14,11 +14,14 @@ import android.os.Build;
 
 public class DescriptionsActivity extends Activity {
 
+	private static Location location;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_descriptions);
-
+		
+		location = (Location) getIntent().getSerializableExtra(MainActivity.KEY);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
@@ -62,10 +65,10 @@ public class DescriptionsActivity extends Activity {
 			View rootView = inflater.inflate(R.layout.fragment_descriptions,
 					container, false);
 			title = (TextView) rootView.findViewById(R.id.tvTitle);
-			desc = (TextView) rootView.findViewById(R.id.tvTitle);
+			desc = (TextView) rootView.findViewById(R.id.tvDescription);
 			
-			title.setText("TITLE");
-			desc.setText("DESCRIPTION");
+			title.setText(location.getName());
+			desc.setText(location.getDescription());
 			return rootView;
 		}
 	}
