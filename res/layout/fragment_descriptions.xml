@@ -17,9 +17,24 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
+    	android:id="@+id/tvAddress"
+    	android:layout_alignParentLeft="true"
+    	android:layout_below="@id/tvTitle"
+    />
+    
+    <Button
+        android:id="@+id/tvMapButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvAddress"
+        android:layout_below="@id/tvTitle"
+    />
+    
+    <TextView
         android:id="@+id/tvDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTitle" />
 
+    
 </RelativeLayout>
