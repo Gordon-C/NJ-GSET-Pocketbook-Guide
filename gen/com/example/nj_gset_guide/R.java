@@ -204,6 +204,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int action_settings=0x7f050010;
+        public static final int bMap=0x7f05000a;
         public static final int container=0x7f050005;
         public static final int hybrid=0x7f050004;
         public static final int iv_building_img=0x7f05000e;
@@ -215,7 +216,6 @@ containing a value of this type.
         public static final int terrain=0x7f050003;
         public static final int tvAddress=0x7f050009;
         public static final int tvDescription=0x7f05000b;
-        public static final int tvMapButton=0x7f05000a;
         public static final int tvTitle=0x7f050008;
         public static final int tv_building_name=0x7f05000f;
         public static final int tv_desc=0x7f050006;

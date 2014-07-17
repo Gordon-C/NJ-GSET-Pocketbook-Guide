@@ -1,7 +1,6 @@
 package com.example.nj_gset_guide;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,8 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
-import android.os.Build;
 
 public class DescriptionsActivity extends Activity {
 
@@ -21,7 +20,7 @@ public class DescriptionsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_descriptions);
 		
-		location = (Location) getIntent().getSerializableExtra(MainActivity.KEY);
+		location = new Location(getIntent().getStringExtra(MainActivity.KEY), this);
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
@@ -70,7 +69,7 @@ public class DescriptionsActivity extends Activity {
 			title = (TextView) rootView.findViewById(R.id.tvTitle);
 			desc = (TextView) rootView.findViewById(R.id.tvDescription);
 			addr = (TextView) rootView.findViewById(R.id.tvAddress);
-			mapBtn = (Button) rootView.findViewById(R.id.tvMapButton);
+			mapBtn = (Button) rootView.findViewById(R.id.bMap);
 			
 			
 			title.setText(location.getName());

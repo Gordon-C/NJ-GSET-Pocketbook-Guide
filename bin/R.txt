@@ -38,6 +38,7 @@ int drawable ic_plusone_small_off_client 0x7f020004
 int drawable ic_plusone_standard_off_client 0x7f020005
 int drawable ic_plusone_tall_off_client 0x7f020006
 int id action_settings 0x7f050010
+int id bMap 0x7f05000a
 int id container 0x7f050005
 int id hybrid 0x7f050004
 int id iv_building_img 0x7f05000e
@@ -49,7 +50,6 @@ int id satellite 0x7f050002
 int id terrain 0x7f050003
 int id tvAddress 0x7f050009
 int id tvDescription 0x7f05000b
-int id tvMapButton 0x7f05000a
 int id tvTitle 0x7f050008
 int id tv_building_name 0x7f05000f
 int id tv_desc 0x7f050006
