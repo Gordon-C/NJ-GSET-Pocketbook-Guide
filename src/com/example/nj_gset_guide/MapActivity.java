@@ -16,15 +16,17 @@ public class MapActivity extends Activity {
 
 	private GoogleMap map;
 	private static final LatLng RUTGERS = new LatLng(40.5017, -74.4481);
+	private static Location location;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
 		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+		location = new Location(getIntent().getStringExtra(MainActivity.KEY).replace(" ", "_"), this);
 		//TODO place marker of given location from getExtras()
-		Marker rutgers = map.addMarker(new MarkerOptions().position(RUTGERS).title("Rutgers"));
-		map.moveCamera(CameraUpdateFactory.newLatLngZoom(RUTGERS, 15));
+		//Marker rutgers = map.addMarker(new MarkerOptions().position(RUTGERS).title("Rutgers"));
+		//map.moveCamera(CameraUpdateFactory.newLatLngZoom(RUTGERS, 15));
 		
 	}
 

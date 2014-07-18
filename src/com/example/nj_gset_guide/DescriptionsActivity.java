@@ -3,6 +3,7 @@ package com.example.nj_gset_guide;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -82,9 +83,11 @@ public class DescriptionsActivity extends Activity {
 			mapBtn.setOnClickListener(new OnClickListener()	{
 				@Override
 				public void onClick(View v) {
-					Intent mapIntent = new Intent(v.getContext(), MapActivity.class);
-					mapIntent.putExtra(KEY, location.getName());
-					startActivity(mapIntent);
+					//Intent mapIntent = new Intent(v.getContext(), MapActivity.class);
+					//mapIntent.putExtra(KEY, location.getName());
+					//startActivity(mapIntent);
+					Intent navIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("geo:0,0?q="+location.getAddress()));
+					startActivity(navIntent);
 				}
 			});
 			
