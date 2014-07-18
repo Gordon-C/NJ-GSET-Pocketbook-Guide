@@ -85,7 +85,7 @@ public class DescriptionsActivity extends Activity {
 				public void onClick(View v) { 
 					Intent navIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps/?daddr=" + location.getAddress().replace(" ", "+")));//"geo:0,0?q="+location.getAddress()));
 					if (isAppInstalled("com.google.android.apps.maps")) {
-					    intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+					    navIntent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
 					}
 					startActivity(navIntent);
 				}
