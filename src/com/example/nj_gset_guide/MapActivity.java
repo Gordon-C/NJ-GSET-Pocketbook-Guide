@@ -15,13 +15,14 @@ import android.view.MenuItem;
 public class MapActivity extends Activity {
 
 	private GoogleMap map;
-	private static final LatLng RUTGERS = new LatLng(40.5017, 74.4481);
+	private static final LatLng RUTGERS = new LatLng(40.5017, -74.4481);
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
 		map = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+		//TODO place marker of given location from getExtras()
 		Marker rutgers = map.addMarker(new MarkerOptions().position(RUTGERS).title("Rutgers"));
 		map.moveCamera(CameraUpdateFactory.newLatLngZoom(RUTGERS, 15));
 		

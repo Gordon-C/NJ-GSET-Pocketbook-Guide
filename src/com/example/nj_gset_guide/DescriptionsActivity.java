@@ -2,11 +2,13 @@ package com.example.nj_gset_guide;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 public class DescriptionsActivity extends Activity {
 
 	private static Location location;
+	public static final String KEY = "com.example.nj_gset_guide.DescriptionsActivity";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -71,11 +74,19 @@ public class DescriptionsActivity extends Activity {
 			addr = (TextView) rootView.findViewById(R.id.tvAddress);
 			mapBtn = (Button) rootView.findViewById(R.id.bMap);
 			
-			
 			title.setText(location.getName());
 			desc.setText(location.getDescription());
 			addr.setText(location.getAddress());
 			mapBtn.setText("Google Maps");
+			
+			mapBtn.setOnClickListener(new OnClickListener()	{
+				@Override
+				public void onClick(View v) {
+					Intent mapIntent = new Intent(v.getContext(), MapActivity.class);
+					mapIntent.putExtra(KEY, location.getName());
+					startActivity(mapIntent);
+				}
+			});
 			
 			return rootView;
 		}

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -112,9 +114,9 @@ public class MainActivity extends Activity {
 			View rowView = inflater.inflate(R.layout.rowlayout, parent, false);
     		TextView buildingName = (TextView) rowView.findViewById(R.id.tv_building_name);
     		buildingName.setTextSize(24);
-    		//ImageView buildingImg = (ImageView) rowView.findViewById(R.id.iv_building_img);
+    		ImageView buildingImg = (ImageView) rowView.findViewById(R.id.iv_building_img);
 			buildingName.setText(locations[position].getName());
-			//TODO set building image
+			buildingImg.setImageDrawable(parent.getResources().getDrawable(R.drawable.default_menu_item));
 			return rowView;
 		}
     }
