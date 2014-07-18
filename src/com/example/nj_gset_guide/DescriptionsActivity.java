@@ -82,16 +82,29 @@ public class DescriptionsActivity extends Activity {
 			
 			mapBtn.setOnClickListener(new OnClickListener()	{
 				@Override
-				public void onClick(View v) {
-					//Intent mapIntent = new Intent(v.getContext(), MapActivity.class);
-					//mapIntent.putExtra(KEY, location.getName());
-					//startActivity(mapIntent);
-					Intent navIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("geo:0,0?q="+location.getAddress()));
+				public void onClick(View v) { 
+					Intent navIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps/?daddr=" + location.getAddress().replace(" ", "+")));//"geo:0,0?q="+location.getAddress()));
+					if (isAppInstalled("com.google.android.apps.maps")) {
+					    intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+					}
 					startActivity(navIntent);
 				}
 			});
 			
 			return rootView;
+		}
+		
+		// helper function to check if Maps is installed - http://stackoverflow.com/questions/6560345/suppressing-google-maps-intent-selection-dialog/7116840#7116840
+		private boolean isAppInstalled(String uri) {
+		    PackageManager pm = getApplicationContext().getPackageManager();
+		    boolean app_installed = false;
+		    try {
+		        pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+		        app_installed = true;
+		    } catch (PackageManager.NameNotFoundException e) {
+		        app_installed = false;
+		    }
+		    return app_installed;
 		}
 	}
 
